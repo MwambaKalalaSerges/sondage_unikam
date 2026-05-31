@@ -1,0 +1,49 @@
+name: sondage
+description: "Application mobile de sondage académique pour l'Université de Kamina."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # --- AUTHENTIFICATION & CLOUD (Firebase) ---
+  firebase_core: ^3.10.1
+  firebase_auth: ^5.4.1
+  cloud_firestore: ^5.6.1
+
+  # --- STOCKAGE LOCAL (SQLite) ---
+  sqflite: ^2.4.1
+  path: ^1.9.1
+  path_provider: ^2.1.5
+
+  # --- GESTION DE SESSION & ÉTAT ---
+  shared_preferences: ^2.3.5
+  provider: ^6.1.2
+
+  # --- CONNECTIVITÉ ---
+  connectivity_plus: ^6.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
+
+# CONFIGURATION DE TON ICÔNE
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon.png"
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/icon.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
